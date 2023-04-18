@@ -25,7 +25,15 @@ public class Converter {
         if (count == 0) {
             View counterTextPanel = view.findViewById(R.id.counterValuePanel);
             counterTextPanel.setVisibility(View.GONE);
-        } else {
+        } else if(count ==1){
+            TextView textView = (TextView) view.findViewById(R.id.count);
+            textView.setText("" + count);
+        }
+        else if(count ==2){
+            TextView textView = (TextView) view.findViewById(R.id.count);
+            textView.setText("" + count);
+        }
+        else {
             TextView textView = (TextView) view.findViewById(R.id.count);
             textView.setText("" + count);
         }
