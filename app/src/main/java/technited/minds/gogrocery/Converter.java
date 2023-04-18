@@ -37,6 +37,10 @@ public class Converter {
             TextView textView = (TextView) view.findViewById(R.id.count);
             textView.setText("" + count);
         }
+        if (1 == 1) {
+        }
+
+        }
         view.measure(View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
                 View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
         view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
